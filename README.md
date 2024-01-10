@@ -4,6 +4,6 @@ This repository is a collection of popular machine coding problems asked in inte
 
 ## Problems
 
-| Problem      | Difficulty | Solution                                       |
-| ------------ | ---------- | ---------------------------------------------- |
-| Progress Bar | Easy       | [Solution](./src/app/components/progress-bar/) |
+| Problem      | Difficulty | Solution                                   |
+| ------------ | ---------- | ------------------------------------------ |
+| Progress Bar | Easy       | [Solution](./src/components/progress-bar/) |
