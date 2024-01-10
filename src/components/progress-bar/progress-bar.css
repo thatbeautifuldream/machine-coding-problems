@@ -1,0 +1,21 @@
+.progress-bar {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  background-color: #e1e1e1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(146, 189, 82),
+    rgb(106, 150, 31)
+  );
+  transform: translateX(calc(100%));
+  transition: transform ease-in 500ms;
+}
