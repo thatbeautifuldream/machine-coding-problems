@@ -1,17 +1,10 @@
-import ProgressBarInit from "@/components/progress-bar";
-
-const CenterOfPage = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      {children}
-    </div>
-  );
-};
+import Link from "next/link";
+import CenterOfPage from "@/components/ui/center-of-page";
 
 export default function Home() {
   return (
     <CenterOfPage>
-      <ProgressBarInit />
+      <Link href="/progress-bar">Progress Bar</Link>
     </CenterOfPage>
   );
 }
