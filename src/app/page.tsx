@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <CenterOfPage>
       <Link href="/progress-bar">Progress Bar</Link>
+      <Link href="/background-changer">Background Changer</Link>
     </CenterOfPage>
   );
 }
