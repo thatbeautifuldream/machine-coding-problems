@@ -4,7 +4,7 @@ import ProgressBar from "@/components/progress-bar/progress-bar";
 import React, { useState, useEffect, useRef } from "react";
 
 const totalMs = 10 * 1000;
-const interval = 1 * 1000;
+const interval = 1 * 500;
 const totalCycles = totalMs / interval;
 const progressMade = (interval / totalMs) * 100;
 
