@@ -1,0 +1,54 @@
+.modal-wrapper {
+  position: fixed;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  background-color: #fff;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(-50%, -200%);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal-wrapper.active {
+  animation-name: slide;
+  animation-duration: 0.35s;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-close {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(242, 111, 103);
+  color: rgb(106, 8, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
