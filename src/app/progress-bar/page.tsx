@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import CenterOfPage from "@/app/_components/CenterOfPage";
 import "./styles.css";
 
-export function ProgressBar({ progress }: { progress: number }) {
+function ProgressBar({ progress }: { progress: number }) {
   return (
     <div className="progress-bar">
       <div
