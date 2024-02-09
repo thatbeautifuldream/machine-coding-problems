@@ -7,6 +7,7 @@ export default function Home() {
       <Link href="/progress-bar">Progress Bar</Link>
       <Link href="/background-changer">Background Changer</Link>
       <Link href="/modal">Modal</Link>
+      <Link href="/slide-show">Slide Show</Link>
     </CenterOfPage>
   );
 }
