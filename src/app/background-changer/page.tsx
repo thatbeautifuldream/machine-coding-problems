@@ -13,12 +13,7 @@ function Page() {
     return (
       <button
         style={{
-          backgroundColor: "white",
-          border: "1px solid black",
-          borderRadius: "5px",
-          padding: "10px",
-          fontSize: "16px",
-          cursor: "pointer",
+          backgroundColor: color,
         }}
         onClick={() => setColor(color)}
       >

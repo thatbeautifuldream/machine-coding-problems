@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CenterOfPage from "@/components/ui/center-of-page";
+import CenterOfPage from "@/app/_components/CenterOfPage";
 
 export default function Home() {
   return (
