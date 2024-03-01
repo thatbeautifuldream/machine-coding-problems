@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import CenterOfPage from "@/app/_components/CenterOfPage";
+import { useEffect, useRef, useState } from "react";
 import "./styles.css";
 
 function ProgressBar({ progress }: { progress: number }) {
@@ -36,8 +35,8 @@ export default function Page() {
   }, []);
 
   return (
-    <CenterOfPage>
+    <div className="flex items-center justify-center min-h-screen py-2 gap-4">
       <ProgressBar progress={progress} />
-    </CenterOfPage>
+    </div>
   );
 }

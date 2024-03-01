@@ -1,13 +1,31 @@
 import Link from "next/link";
-import CenterOfPage from "@/app/_components/CenterOfPage";
+
+function Button({ children }: { children: React.ReactNode }) {
+  return (
+    <button
+      type="button"
+      className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+    >
+      {children}
+    </button>
+  );
+}
 
 export default function Home() {
   return (
-    <CenterOfPage>
-      <Link href="/progress-bar">Progress Bar</Link>
-      <Link href="/background-changer">Background Changer</Link>
-      <Link href="/modal">Modal</Link>
-      <Link href="/slide-show">Slide Show</Link>
-    </CenterOfPage>
+    <div className="flex flex-row items-center justify-center min-h-screen py-2 gap-4">
+      <Link href="/progress-bar">
+        <Button>Progress Bar</Button>
+      </Link>
+      <Link href="/background-changer">
+        <Button>Background Changer</Button>
+      </Link>
+      <Link href="/modal">
+        <Button>Modal</Button>
+      </Link>
+      <Link href="/slide-show">
+        <Button>Slide Show</Button>
+      </Link>
+    </div>
   );
 }
