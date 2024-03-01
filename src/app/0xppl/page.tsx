@@ -8,7 +8,7 @@ async function getPosts() {
 
 export default async function Home() {
   const posts = await getPosts();
-  console.log(posts);
+  // console.log(posts);
 
   const RenderBreaksInPost = ({ post }: { post: string }) => {
     return post.split("{{break_line}}").map((str, index) => {
@@ -26,7 +26,7 @@ export default async function Home() {
     identities,
   }: {
     post: string;
-    identities: Object;
+    identities: any;
   }) => {
     const identityNumber = post.split("{{identity||")[1].split("}}")[0];
     return (
